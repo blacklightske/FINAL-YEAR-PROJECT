@@ -74,9 +74,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.friends_book"
+    namespace "com.baraka_dairy"
     defaultConfig {
-        applicationId "com.friends_book"
+        applicationId "com.baraka_dairy"
         minSdkVersion rootProject.ext.minSdkVersion
         // ectorDrawables.useSupportLibrary = true
         targetSdkVersion rootProject.ext.targetSdkVersion

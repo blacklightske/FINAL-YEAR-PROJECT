@@ -4,6 +4,7 @@ import React from "react";
 import { SafeAreaView, StatusBar, StyleSheet } from 'react-native';
 import { WebView } from 'react-native-webview';
 
+
 const Blog = () => {
   return (
     <SafeAreaView className="px-4 my-6 bg-primary h-full">

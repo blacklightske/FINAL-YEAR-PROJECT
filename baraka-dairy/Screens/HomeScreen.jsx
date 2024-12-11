@@ -25,7 +25,9 @@ import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {useFocusEffect} from '@react-navigation/native';
 import Toast from 'react-native-toast-message';
-import {BACKEND_URL} from "@env";
+
+const BACKEND_URL = process.env.BACKEND_URL;
+
 function HomeScreen(props) {
   const navigation = useNavigation();
   console.log(props);

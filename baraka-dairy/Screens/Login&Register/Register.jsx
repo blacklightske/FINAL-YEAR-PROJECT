@@ -16,9 +16,10 @@ import Fontisto from 'react-native-vector-icons/Fontisto';
 import Error from 'react-native-vector-icons/MaterialIcons';
 import axios from 'axios';
 import Toast from 'react-native-toast-message';
-import {BACKEND_URL} from "@env" ;
+
 import { RadioButton } from 'react-native-paper';
 
+const BACKEND_URL = process.env.BACKEND_URL;
 function RegisterPage({ props }) {
   const [name, setName] = useState('');
   const [nameVerify, setNameVerify] = useState(false);

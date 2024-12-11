@@ -3,7 +3,9 @@ import {useState, useEffect} from 'react';
 import {StyleSheet, Text, View, FlatList, Image, TextInput} from 'react-native';
 import axios from 'axios';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import {BACKEND_URL} from "@env" ;
+
+const BACKEND_URL = process.env.BACKEND_URL;
+
 function UserScreen() {
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredUsers, setFilteredUsers] = useState([]);

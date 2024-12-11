@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, Image, FlatList, StyleSheet } from 'react-native';
 import axios from 'axios';
-import {BACKEND_URL} from "@env" ;
+
+
+const BACKEND_URL = process.env.BACKEND_URL;
 
 const Store = () => {
   const [products, setProducts] = useState([]);

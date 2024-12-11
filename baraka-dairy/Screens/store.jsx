@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
 import axios from 'axios';
-import {BACKEND_URL} from "@env" ;
+
+const BACKEND_URL = process.env.BACKEND_URL;
 
 const Store = ({ navigation }) => {
   const [items, setItems] = useState([]);

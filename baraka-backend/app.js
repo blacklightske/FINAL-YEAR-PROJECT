@@ -3,6 +3,8 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
+const backendUrl = process.env.REACT_APP_BACKEND_URL;
+console.log('Backend URL:', backendUrl);
 
 const app = express();
 app.use(express.json());

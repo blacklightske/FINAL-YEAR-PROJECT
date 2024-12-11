@@ -13,9 +13,11 @@ import Feather from 'react-native-vector-icons/Feather';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import {useEffect, useState} from 'react';
 import {log} from 'react-native-reanimated';
-import {BACKEND_URL} from "@env" ;
+
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+
+const BACKEND_URL = process.env.BACKEND_URL;
 
 function LoginPage({props}) {
   const navigation = useNavigation();

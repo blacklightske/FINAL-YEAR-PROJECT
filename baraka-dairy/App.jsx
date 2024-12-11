@@ -24,7 +24,7 @@ import AdminHome from './Screens/Admin/AdminHome';
 import ProdUpload from './Screens/Admin/ProdUpload';
 import AdminHomeScreen from './Screens/Admin/AdminHome';
 import Blog from './Screens/blog';
-import 'react-native-gesture-handler';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 const toastConfig = {
   success: props => (

@@ -4,7 +4,8 @@ import { FlatList, Image, RefreshControl, Text, View } from 'react-native';
 
 import { images } from '../../constants';
 import { EmptyState, SearchInput, Trending, VideoCard } from '../../components';
-import {BACKEND_URL} from "@env" ;
+
+const BACKEND_URL = process.env.BACKEND_URL;
 
 const Home = () => {
   const [posts, setPosts] = useState([]);

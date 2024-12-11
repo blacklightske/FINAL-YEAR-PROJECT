@@ -2,9 +2,10 @@ import React, {useState, useEffect} from 'react';
 import {Text, View, StyleSheet, Image, FlatList,Alert} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
-import {BACKEND_URL} from "@env" ;
 import {Button} from 'react-native-paper';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+const BACKEND_URL = process.env.BACKEND_URL;
+
 function AdminScreen({navigation}) {
   const [userData, setUserData] = useState('');
   const [allUserData, setAllUserData] = useState('');
